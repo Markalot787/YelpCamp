@@ -1,14 +1,12 @@
 mapboxgl.accessToken = mapToken;
 const map = new mapboxgl.Map({
     container: 'cluster-map',
-    style: 'mapbox://styles/mapbox/light-v10',
-    center: [-103.59179687498357, 40.66995747013945],
-    zoom: 3
+    style: 'mapbox://styles/mapbox/outdoors-v11',
+    center: [-66.405218, 18.241536],
+    zoom: 9
 });
 
 map.addControl(new mapboxgl.NavigationControl());
-
-
 
 
 map.on('load', function () {
@@ -129,4 +127,3 @@ map.on('load', function () {
         map.getCanvas().style.cursor = '';
     });
 });
-
